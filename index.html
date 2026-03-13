@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Sellers V4</title>
+    <title>Best Sellers</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -17,21 +17,21 @@
 
 <body class="bg-white">
 
-    <div class="w-full mx-auto px-4 sm:px-6 py-8">
+    <div class="w-full mx-auto px-4 sm:px-6 md:pr-0 md:pl-[128px] py-[50px]">
 
-        <div class="flex items-center justify-between mb-5">
+        <div class="flex items-center justify-between mb-5 md:pr-[128px]">
 
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">Best Sellers</h2>
+            <h2 class="text-xxl sm:text-[50px] font-bold text-gray-900 tracking-tight">
+                Best Sellers
+            </h2>
 
             <a href="#"
-                class="flex items-center gap-1 text-xs font-medium text-gray-800 hover:underline whitespace-nowrap">
+                class="flex items-center gap-1 text-xs font-medium text-gray-800 hover:underline whitespace-nowrap text-x">
 
                 Shop All Best Sellers
 
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-
                 </svg>
 
             </a>
@@ -39,11 +39,11 @@
         </div>
 
 
-        <div id="track" class="hidden md:flex gap-3 overflow-x-auto scroll-smooth pb-3"
+        <div id="track" class="hidden md:flex gap-[24px] overflow-x-auto scroll-smooth pb-3"
             style="scroll-snap-type:x mandatory;"></div>
 
 
-        <div class="hidden md:block mt-2 h-px bg-gray-200 rounded-full">
+        <div class="hidden md:block mt-12 bg-gray-200 rounded-full h-[4px] hover:h-[6px] transition-all duration-300">
 
             <div id="progressBar" class="h-full bg-gray-900 rounded-full transition-all duration-150" style="width:20%">
             </div>
@@ -64,9 +64,217 @@
 
     </div>
 
-    <script src="script.js">
+
+    <script>
+
+        const products = [
+
+            {
+                name: "Outside Vibes T-Shirt Sunshine",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-yellow-400",
+                imgPrimary: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80"
+            },
+
+            {
+                name: "Hike Bottle Outside Vibes Forest Green",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-gray-100",
+                imgPrimary: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=80"
+            },
+
+            {
+                name: "Rest In Nature T-Shirt Charcoal",
+                price: "$104.95",
+                compare_price: "$122.95"
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-red-700",
+                imgPrimary: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80"
+            },
+
+            {
+                name: "Rest In Nature T-Shirt Charcoal",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 3,
+                badge: "Best Seller",
+                bg: "bg-red-700",
+                imgPrimary: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80"
+            },
+
+            {
+                name: "Rest In Nature T-Shirt Charcoal",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-red-700",
+                imgPrimary: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80"
+            },
+            {
+                name: "Rest In Nature T-Shirt Charcoal",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-red-700",
+                imgPrimary: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80"
+            }, {
+                name: "Rest In Nature T-Shirt Charcoal",
+                price: "$104.95",
+                reviews: "1,234",
+                rating: 4,
+                badge: "Best Seller",
+                bg: "bg-red-700",
+                imgPrimary: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+                imgHover: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80"
+            }
+
+        ];
 
 
+        function buildStars(r) {
+
+            const fullStar = `
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.887832 5.67721C0.790482 5.88138 0.790482 6.11859 0.887832 6.32277C0.97199 6.49928 1.11811 6.5966 1.19827 6.64567C1.28114 6.69641 1.3867 6.74849 1.4896 6.79925L3.67324 7.87712L4.02564 10.2881C4.04221 10.4016 4.05921 10.5181 4.08192 10.6126C4.10389 10.7039 4.15142 10.8729 4.29334 11.0073C4.45752 11.1629 4.68313 11.236 4.90735 11.2064C5.10117 11.1808 5.23879 11.0719 5.3102 11.0108C5.38402 10.9477 5.46612 10.8633 5.54614 10.7811L7.24469 9.03725L9.64383 9.44873C9.75694 9.46816 9.87299 9.48808 9.96988 9.49576C10.0636 9.50318 10.239 9.51035 10.4109 9.417C10.6097 9.30902 10.7491 9.11708 10.7904 8.89465C10.826 8.70234 10.7649 8.5377 10.7289 8.45088C10.6917 8.36111 10.6368 8.2569 10.5834 8.15532L9.44993 5.99999L10.5834 3.84465C10.6368 3.74307 10.6917 3.63886 10.7289 3.54909C10.7649 3.46227 10.826 3.29763 10.7904 3.10533C10.7491 2.88289 10.6097 2.69096 10.4109 2.58298C10.239 2.48963 10.0636 2.4968 9.96988 2.50422C9.873 2.51189 9.75696 2.53182 9.64385 2.55124L7.24469 2.96273L5.54612 1.21881C5.46611 1.13663 5.38402 1.05232 5.3102 0.989164C5.23879 0.928063 5.10117 0.819141 4.90735 0.793546C4.68313 0.763936 4.45752 0.837087 4.29334 0.992633C4.15142 1.12709 4.1039 1.29604 4.08192 1.38742C4.05921 1.48188 4.04221 1.59834 4.02564 1.71183L3.67324 4.12286L1.48963 5.2007C1.38673 5.25147 1.28114 5.30356 1.19827 5.3543C1.11811 5.40338 0.97199 5.5007 0.887832 5.67721Z" fill="#231F20"/>
+            </svg>`;
+
+            const emptyStar = `
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.887832 5.67721C0.790482 5.88138 0.790482 6.11859 0.887832 6.32277C0.97199 6.49928 1.11811 6.5966 1.19827 6.64567C1.28114 6.69641 1.3867 6.74849 1.4896 6.79925L3.67324 7.87712L4.02564 10.2881C4.04221 10.4016 4.05921 10.5181 4.08192 10.6126C4.10389 10.7039 4.15142 10.8729 4.29334 11.0073C4.45752 11.1629 4.68313 11.236 4.90735 11.2064C5.10117 11.1808 5.23879 11.0719 5.3102 11.0108C5.38402 10.9477 5.46612 10.8633 5.54614 10.7811L7.24469 9.03725L9.64383 9.44873C9.75694 9.46816 9.87299 9.48808 9.96988 9.49576C10.0636 9.50318 10.239 9.51035 10.4109 9.417C10.6097 9.30902 10.7491 9.11708 10.7904 8.89465C10.826 8.70234 10.7649 8.5377 10.7289 8.45088C10.6917 8.36111 10.6368 8.2569 10.5834 8.15532L9.44993 5.99999L10.5834 3.84465C10.6368 3.74307 10.6917 3.63886 10.7289 3.54909C10.7649 3.46227 10.826 3.29763 10.7904 3.10533C10.7491 2.88289 10.6097 2.69096 10.4109 2.58298C10.239 2.48963 10.0636 2.4968 9.96988 2.50422C9.873 2.51189 9.75696 2.53182 9.64385 2.55124L7.24469 2.96273L5.54612 1.21881C5.46611 1.13663 5.38402 1.05232 5.3102 0.989164C5.23879 0.928063 5.10117 0.819141 4.90735 0.793546C4.68313 0.763936 4.45752 0.837087 4.29334 0.992633C4.15142 1.12709 4.1039 1.29604 4.08192 1.38742C4.05921 1.48188 4.04221 1.59834 4.02564 1.71183L3.67324 4.12286L1.48963 5.2007C1.38673 5.25147 1.28114 5.30356 1.19827 5.3543C1.11811 5.40338 0.97199 5.5007 0.887832 5.67721Z" fill="#CFCFCF"/>
+            </svg>`;
+
+            let html = "";
+
+            for (let i = 1; i <= 5; i++) {
+                html += i <= r ? fullStar : emptyStar;
+            }
+
+            return html;
+
+        }
+
+        function desktopCard(p) {
+
+            return `<div class="group flex-none cursor-pointer" style="width:calc(22.2% - 10px);min-width:160px;scroll-snap-align:start;">
+
+<div class="relative rounded-xl overflow-hidden ${p.bg} mb-[16px]" style="aspect-ratio:1/1;">
+
+<span class="absolute top-2 left-2 z-10 text-[10px] font-bold uppercase tracking-wide bg-white text-gray-900 px-2 py-0.5 rounded-full   border-solid border-black
+">${p.badge}</span>
+<span class="absolute top-2 right-2 z-10 text-[10px] font-bold uppercase tracking-wide bg-[#5C7962] text-[white] px-2 py-0.5 rounded-full border-solid
+ border-black
+">${p.compare_price}
+
+                < img class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 rounded-lg" src = "${p.imgPrimary}" >
+
+        <img class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg" src="${p.imgHover}">
+
+        </div>
+
+        <p class="text-[18px] font-semibold uppercase tracking-wider text-gray-900 truncate">${p.name}</p>
+
+        <div class="flex items-center gap-1 my-1">
+
+        <div class="flex gap-px">${buildStars(p.rating)}</div>
+
+            <span class="text-[12px] text-gray-400 text-[#707070]">${p.reviews} Reviews</span>
+
+        </div>
+
+        <p class="text-[16px] font-semibold text-gray-900">${p.price}</p>
+
+        </div > `;
+
+        }
+
+
+        function mobileCard(p, i) {
+
+            const extra = i >= 4 ? 'hidden mobile-extra' : '';
+
+            return `< div class="${extra}" >
+
+<div class="relative rounded-xl overflow-hidden ${p.bg} mb-2" style="aspect-ratio:1/1;">
+
+<span class="absolute top-2 left-2 z-10 text-[10px] font-bold uppercase tracking-wide bg-white text-gray-900 px-4 py-0.5 rounded-full">${p.badge}</span>
+<span class="absolute top-2 right-2 z-10 text-[10px] font-bold uppercase tracking-wide bg-white text-gray-900 px-4 py-0.5 rounded-full">${p.badge}</span>
+
+<img class="w-full h-full object-cover" src="${p.imgPrimary}">
+
+</div>
+
+<p class="text-[9px] font-semibold uppercase tracking-wider text-gray-900 truncate">${p.name}</p>
+
+<div class="flex items-center gap-1 my-1">
+
+<div class="flex gap-px">${buildStars(p.rating)}</div>
+
+<span class="text-[9px] text-gray-400">${p.reviews} Reviews</span>
+
+</div>
+
+<p class="text-sm font-semibold text-gray-900">${p.price}</p>
+
+</ >`;
+
+        }
+
+
+        const track = document.getElementById("track");
+        const mobileGrid = document.getElementById("mobileGrid");
+
+        products.forEach((p, i) => {
+
+            track.insertAdjacentHTML("beforeend", desktopCard(p));
+            mobileGrid.insertAdjacentHTML("beforeend", mobileCard(p, i));
+
+        });
+
+
+        const bar = document.getElementById("progressBar");
+
+        track.addEventListener("scroll", () => {
+
+            const max = track.scrollWidth - track.clientWidth;
+
+            const pct = max > 0 ? (track.scrollLeft / max) * 100 : 0;
+
+            bar.style.width = pct + "%";
+
+        }, { passive: true });
+
+
+        const loadBtn = document.getElementById("loadMoreBtn");
+
+        let expanded = false;
+
+        function toggleMobile() {
+
+            expanded = !expanded;
+
+            document.querySelectorAll(".mobile-extra").forEach(el => {
+                el.classList.toggle("hidden", !expanded);
+            });
+
+            loadBtn.textContent = expanded ? "Load Less" : "Load More";
+
+        }
 
     </script>
 
