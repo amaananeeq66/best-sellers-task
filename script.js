@@ -11,6 +11,7 @@ const products = [
     imgHover:
       "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
   },
+
   {
     name: "Hike Bottle Outside Vibes Forest Green",
     price: "$104.95",
@@ -22,6 +23,116 @@ const products = [
       "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
     imgHover:
       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=80",
+  },
+
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+  },
+  {
+    name: "Rest In Nature T-Shirt Charcoal",
+    price: "$104.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-red-700",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    imgHover:
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
   },
   {
     name: "Rest In Nature T-Shirt Charcoal",
@@ -37,22 +148,20 @@ const products = [
   },
 ];
 
-function buildStars(rating) {
+function buildStars(r) {
   const path = `<path d="M10 1l2.4 4.9 5.3.8-3.9 3.8.9 5.3L10 13.3l-4.8 2.5.9-5.3L2.3 6.7z"/>`;
 
   let html = "";
 
   for (let i = 1; i <= 5; i++) {
-    html += `<svg class="w-2.5 h-2.5 ${i <= rating ? "fill-gray-900" : "fill-gray-200"}" viewBox="0 0 20 20">${path}</svg>`;
+    html += `<svg class="w-2.5 h-2.5 ${i <= r ? "fill-gray-900" : "fill-gray-200"}" viewBox="0 0 20 20">${path}</svg>`;
   }
 
   return html;
 }
 
 function desktopCard(p) {
-  return `
-
-<div class="group flex-none cursor-pointer" style="width:calc(22.2% - 10px);min-width:160px;scroll-snap-align:start;">
+  return `<div class="group flex-none cursor-pointer" style="width:calc(22.2% - 10px);min-width:160px;scroll-snap-align:start;">
 
 <div class="relative rounded-xl overflow-hidden ${p.bg} mb-2" style="aspect-ratio:1/1;">
 
@@ -79,10 +188,10 @@ function desktopCard(p) {
 </div>`;
 }
 
-function mobileCard(p) {
-  return `
+function mobileCard(p, i) {
+  const extra = i >= 4 ? "hidden mobile-extra" : "";
 
-<div class="cursor-pointer">
+  return `<div class="${extra}">
 
 <div class="relative rounded-xl overflow-hidden ${p.bg} mb-2" style="aspect-ratio:1/1;">
 
@@ -108,24 +217,25 @@ function mobileCard(p) {
 }
 
 const track = document.getElementById("track");
+
 const mobileGrid = document.getElementById("mobileGrid");
 
-products.forEach((p) => {
+products.forEach((p, i) => {
   track.insertAdjacentHTML("beforeend", desktopCard(p));
 
-  mobileGrid.insertAdjacentHTML("beforeend", mobileCard(p));
+  mobileGrid.insertAdjacentHTML("beforeend", mobileCard(p, i));
 });
 
-const bar = document.getElementById("progressBar");
+const loadBtn = document.getElementById("loadMoreBtn");
 
-track.addEventListener(
-  "scroll",
-  () => {
-    const max = track.scrollWidth - track.clientWidth;
+let expanded = false;
 
-    const pct = max > 0 ? (track.scrollLeft / max) * 80 + 20 : 20;
+function toggleMobile() {
+  expanded = !expanded;
 
-    bar.style.width = pct + "%";
-  },
-  { passive: true },
-);
+  document.querySelectorAll(".mobile-extra").forEach((el) => {
+    el.classList.toggle("hidden", !expanded);
+  });
+
+  loadBtn.textContent = expanded ? "Load Less" : "Load More";
+}
