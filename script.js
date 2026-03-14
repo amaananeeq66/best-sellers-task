@@ -8,133 +8,128 @@ const products = [
     badge: "Best Seller",
     bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=80",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
   {
-    name: "Hike Bottle Forest Green",
-    price: "$84.95",
-    compare_price: "$104.95",
-    reviews: "923",
-    rating: 5,
-    badge: "Popular",
-    bg: "bg-gray-100",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
-    imgHover:
-      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=80",
-  },
-
-  {
-    name: "Rest In Nature T-Shirt Charcoal",
+    name: "Hike Bottle Outside Vibes Forest Green",
     price: "$104.95",
-    compare_price: "$122.95",
-    reviews: "654",
+    compare_price: "$129.95",
+    reviews: "1,234",
     rating: 4,
     badge: "Best Seller",
-    bg: "bg-red-700",
+    bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+      "https://images.unsplash.com/photo-1616740540792-3daec604777d?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+      "https://plus.unsplash.com/premium_photo-1681154819686-43fcc4dc4df3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
-  {
-    name: "Outdoor Adventure Hoodie",
-    price: "$94.95",
-    reviews: "342",
+   {
+    name: "Rest in Nature T-Shirt Charcoal",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
     rating: 4,
-    badge: "Trending",
-    bg: "bg-green-200",
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1520975922284-9c5d8c0eec04?w=500&q=80",
+      "https://plus.unsplash.com/premium_photo-1770559428079-ac7bfb8eea78?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80",
+      "https://images.unsplash.com/photo-1573798484153-da43eda898f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
-  {
-    name: "Explorer Backpack",
-    price: "$149.95",
-    compare_price: "$189.95",
-    reviews: "784",
-    rating: 5,
-    badge: "Top Rated",
-    bg: "bg-gray-200",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500&q=80",
-    imgHover:
-      "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&q=80",
-  },
-
-  {
-    name: "Nature Walk Sneakers",
-    price: "$119.95",
-    compare_price: "$159.95",
-    reviews: "1,001",
+    {
+    name: "Outside Vibes Cap Forest Green",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
     rating: 4,
-    badge: "Hot",
-    bg: "bg-blue-200",
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+      "https://images.unsplash.com/photo-1620327467532-6ebaca6273ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
+      "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
-  {
-    name: "Camping Mug Steel",
-    price: "$24.95",
-    reviews: "456",
-    rating: 3,
-    badge: "Classic",
-    bg: "bg-gray-100",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=500&q=80",
-    imgHover:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80",
-  },
-
-  {
-    name: "Trail Cap Brown",
-    price: "$34.95",
-    compare_price: "$49.95",
-    reviews: "231",
+    {
+    name: "Rest in Nature T-Shirt Perfume",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
     rating: 4,
-    badge: "New",
-    bg: "bg-yellow-200",
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1520974735194-3f1e6b1f92f2?w=500&q=80",
+      "https://images.unsplash.com/photo-1700665053090-e64274eeba84?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=500&q=80",
+      "https://images.unsplash.com/photo-1626953313883-9d031d98307e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-
-  {
-    name: "Adventure Shorts",
-    price: "$59.95",
-    reviews: "678",
+     {
+    name: "Outside Vibes Cap Forest Shoes",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
     rating: 4,
-    badge: "Popular",
-    bg: "bg-orange-200",
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
     imgPrimary:
-      "https://images.unsplash.com/photo-1593032465171-8c7d6b5f0c51?w=500&q=80",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imgHover:
-      "https://images.unsplash.com/photo-1520975922284-9c5d8c0eec04?w=500&q=80",
+      "https://images.unsplash.com/photo-1605408499391-6368c628ef42?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+    {
+    name: "Outside Vibes Cap Forest Buds",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover:
+      "https://images.unsplash.com/photo-1615281612781-4b972bd4e3fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+   {
+    name: "Outside Vibes Cap Forest Watch",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover:
+      "https://images.unsplash.com/photo-1622434641406-a158123450f9?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+   {
+    name: "Outside Vibes Cap Forest Honey",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover:
+      "https://images.unsplash.com/photo-1654515722385-c684c5331c04?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+    {
+    name: "Outside Vibes Cap Forest Milk",
+    price: "$104.95",
+    compare_price: "$129.95",
+    reviews: "1,234",
+    rating: 4,
+    badge: "Best Seller",
+    bg: "bg-yellow-400",
+    imgPrimary:
+      "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover:
+      "https://images.unsplash.com/photo-1611211301828-be4b317d0707?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 
-  {
-    name: "Mountain Jacket",
-    price: "$189.95",
-    compare_price: "$229.95",
-    reviews: "845",
-    rating: 5,
-    badge: "Premium",
-    bg: "bg-blue-300",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1544441893-675973e31985?w=500&q=80",
-    imgHover:
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80",
-  },
 ];
 
 function getDiscount(price, compare) {
@@ -149,8 +144,8 @@ function getDiscount(price, compare) {
 }
 
 function buildStars(r) {
-  const full = `<svg width="12" height="12" class="w-[9px] h-[9px] md:w-[12px] md:h-12" viewBox="0 0 12 12"><path fill="#231F20" d="M6 0l1.8 3.7 4.1.6-3 2.9.7 4.1L6 9.6 2.4 11.3l.7-4.1-3-2.9 4.1-.6z"/></svg>`;
-  const empty = `<svg width="12" height="12"  class="w-[9px] h-[9px] md:w-[12px] md:h-12" viewBox="0 0 12 12"><path fill="#CFCFCF" d="M6 0l1.8 3.7 4.1.6-3 2.9.7 4.1L6 9.6 2.4 11.3l.7-4.1-3-2.9 4.1-.6z"/></svg>`;
+  const full = `<svg width="12" height="12" class="w-[9px] h-[9px] md:w-[12px] md:h-[12px]" viewBox="0 0 12 12"><path fill="#231F20" d="M6 0l1.8 3.7 4.1.6-3 2.9.7 4.1L6 9.6 2.4 11.3l.7-4.1-3-2.9 4.1-.6z"/></svg>`;
+  const empty = `<svg width="12" height="12"  class="w-[9px] h-[9px] md:w-[12px] md:h-[12px]" viewBox="0 0 12 12"><path fill="#CFCFCF" d="M6 0l1.8 3.7 4.1.6-3 2.9.7 4.1L6 9.6 2.4 11.3l.7-4.1-3-2.9 4.1-.6z"/></svg>`;
 
   let html = "";
 
@@ -186,17 +181,17 @@ function desktopCard(p) {
 
                     </div>
 
-                    <p class="text-[18px] font-semibold uppercase tracking-wider text-gray-900 truncate">${p.name}</p>
+                    <p class="text-[18px] font-normal uppercase tracking-wider text-gray-900 truncate" style="font-family: 'Bebas Neue', sans-serif;">${p.name}</p>
 
                     <div class="flex items-center gap-1 my-1 mb-2 md:mb-1">
 
-                    <div class="flex gap-px">${buildStars(p.rating)}</div>
+                    <div class="flex gap-px" >${buildStars(p.rating)}</div>
 
-                    <span class="text-[12px] text-[#707070]">${p.reviews} Reviews</span>
+                    <span class="text-[12px] text-[#707070]" style="font-family: 'Poppins', sans-serif;">${p.reviews} Reviews</span>
 
                     </div>
 
-                    <p class="text-[16px] font-semibold text-gray-900">${p.price}</p>
+                    <p class="text-[16px] font-medium text-gray-900" style="font-family: 'Poppins', sans-serif;">${p.price}</p>
 
                     </div>
 
