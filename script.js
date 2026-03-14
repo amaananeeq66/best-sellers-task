@@ -3,131 +3,111 @@ const products = [
     name: "Outside Vibes T-Shirt Sunshine",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Hike Bottle Outside Vibes Forest Green",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1616740540792-3daec604777d?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://plus.unsplash.com/premium_photo-1681154819686-43fcc4dc4df3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1616740540792-3daec604777d?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://plus.unsplash.com/premium_photo-1681154819686-43fcc4dc4df3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-   {
+  {
     name: "Rest in Nature T-Shirt Charcoal",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://plus.unsplash.com/premium_photo-1770559428079-ac7bfb8eea78?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1573798484153-da43eda898f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://plus.unsplash.com/premium_photo-1770559428079-ac7bfb8eea78?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1573798484153-da43eda898f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-    {
+  {
     name: "Outside Vibes Cap Forest Green",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1620327467532-6ebaca6273ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1620327467532-6ebaca6273ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-    {
+  {
     name: "Rest in Nature T-Shirt Perfume",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1700665053090-e64274eeba84?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1626953313883-9d031d98307e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1700665053090-e64274eeba84?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1626953313883-9d031d98307e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-     {
+  {
     name: "Outside Vibes Cap Forest Shoes",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1605408499391-6368c628ef42?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1605408499391-6368c628ef42?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-    {
+  {
     name: "Outside Vibes Cap Forest Buds",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1615281612781-4b972bd4e3fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1615281612781-4b972bd4e3fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-   {
+  {
     name: "Outside Vibes Cap Forest Watch",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1622434641406-a158123450f9?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1622434641406-a158123450f9?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-   {
+  {
     name: "Outside Vibes Cap Forest Honey",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1654515722385-c684c5331c04?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1654515722385-c684c5331c04?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-    {
+  {
     name: "Outside Vibes Cap Forest Milk",
     price: "$104.95",
     compare_price: "$129.95",
-    reviews: "1,234",
-    rating: 4,
+    reviews: (Math.floor(Math.random() * 4800) + 200).toLocaleString(),
+    rating: parseFloat((3.5 + Math.random() * 1.5).toFixed(1)),
     badge: "Best Seller",
     bg: "bg-yellow-400",
-    imgPrimary:
-      "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imgHover:
-      "https://images.unsplash.com/photo-1611211301828-be4b317d0707?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPrimary: "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgHover: "https://images.unsplash.com/photo-1611211301828-be4b317d0707?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 
 ];
